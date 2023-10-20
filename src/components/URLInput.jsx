@@ -19,18 +19,20 @@ function URLInput({ onSetGeneratedImgSource }) {
     setCurrentInputURL(e.target.value);
   }
 
-  async function generateQR(URL) {
-    if (!URL) return;
+  async function handleSubmitGenerateQR(e) {
+    e.preventDefault();
+
+    if (!currentInputURL) return;
 
     try {
-      onSetGeneratedImgSource(await QRCode.toDataURL(URL));
+      onSetGeneratedImgSource(await QRCode.toDataURL(currentInputURL));
     } catch (err) {
       console.error(err);
     }
   }
 
   return (
-    <div>
+    <form onSubmit={handleSubmitGenerateQR}>
       <input
         type="text"
         name="url"
@@ -38,8 +40,8 @@ function URLInput({ onSetGeneratedImgSource }) {
         value={currentInputURL}
         onChange={handleSetCurrentInputURL}
       />
-      <button onClick={() => generateQR(currentInputURL)}>Generate</button>
-    </div>
+      <button type="submit">Generate</button>
+    </form>
   );
 }
 
