@@ -2,6 +2,7 @@ import { useState } from "react";
 import Heading from "./components/Heading";
 import QRImage from "./components/QrImage";
 import URLInput from "./components/URLInput";
+import Download from "./components/Download";
 
 function App() {
   /**
@@ -16,6 +17,9 @@ function App() {
       <Heading />
       <QRImage generatedImgSource={generatedImgSource} />
       <URLInput setGeneratedImgSource={setGeneratedImgSource} />
+      {generatedImgSource && (
+        <Download generatedImgSource={generatedImgSource} />
+      )}
     </div>
   );
 }
