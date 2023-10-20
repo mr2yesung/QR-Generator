@@ -16,7 +16,7 @@ function App() {
     <div className="main-center">
       <Heading />
       <QRImage generatedImgSource={generatedImgSource} />
-      <URLInput setGeneratedImgSource={setGeneratedImgSource} />
+      <URLInput onSetGeneratedImgSource={setGeneratedImgSource} />
       {generatedImgSource && (
         <Download generatedImgSource={generatedImgSource} />
       )}

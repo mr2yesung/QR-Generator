@@ -1,7 +1,12 @@
 import QRCode from "qrcode";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-function URLInput({ setGeneratedImgSource }) {
+URLInput.propTypes = {
+  onSetGeneratedImgSource: PropTypes.func,
+};
+
+function URLInput({ onSetGeneratedImgSource }) {
   /**
    * currentInputURL stores the data of user input dynamically
    * currentInputURL needs to be a string
@@ -18,7 +23,7 @@ function URLInput({ setGeneratedImgSource }) {
     if (!URL) return;
 
     try {
-      setGeneratedImgSource(await QRCode.toDataURL(URL));
+      onSetGeneratedImgSource(await QRCode.toDataURL(URL));
     } catch (err) {
       console.error(err);
     }
