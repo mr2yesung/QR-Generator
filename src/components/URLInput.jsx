@@ -32,15 +32,20 @@ function URLInput({ onSetGeneratedImgSource }) {
   }
 
   return (
-    <form onSubmit={handleSubmitGenerateQR}>
+    <form onSubmit={handleSubmitGenerateQR} className="input-group mb-3">
       <input
         type="text"
         name="url"
         placeholder="Enter your URL"
         value={currentInputURL}
         onChange={handleSetCurrentInputURL}
+        className="form-control"
+        aria-label="Enter your URL"
+        aria-describedby="button-addon2"
       />
-      <button type="submit">Generate</button>
+      <button type="submit" className="btn btn-outline-dark" id="button-addon2">
+        Generate
+      </button>
     </form>
   );
 }

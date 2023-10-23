@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+/*
+place in center
+*/
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Playpen Sans", cursive;
+}
+
+.form-control {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.btn {
+  font-family: "Playpen Sans", cursive;
+}

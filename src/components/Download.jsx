@@ -6,7 +6,12 @@ Download.propTypes = {
 
 function Download({ generatedImgSource }) {
   return (
-    <a href={generatedImgSource} download="Your Generated QR Code">
+    <a
+      href={generatedImgSource}
+      download="Your Generated QR Code"
+      className="btn btn-primary"
+      role="button"
+    >
       Download
     </a>
   );
