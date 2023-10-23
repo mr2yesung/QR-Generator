@@ -6,7 +6,9 @@ QR code generator web application.
 
 Enter your URL in the text input form to generate QR code.
 <br/>
+<br/>
 You can generate your QR code by clicking on the generate button on the side of text input form. Another alternative way to generate the QR code is hitting enter key after typing the URL.
+<br/>
 <br/>
 The generated QR code will appear on the screen, and you have the option to download the QR code on your local device in .png format by clicking the download button at the buttom.
 
