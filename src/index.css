@@ -22,6 +22,18 @@ img {
 
 .form-control {
   font-family: "Roboto Condensed", sans-serif;
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.btn-container {
+  /*
+  use grid to easily make the two buttons have same size
+  */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
 }
 
 .btn {

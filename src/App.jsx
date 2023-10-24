@@ -2,7 +2,6 @@ import { useState } from "react";
 import Heading from "./components/Heading";
 import QRImage from "./components/QrImage";
 import URLInput from "./components/URLInput";
-import Download from "./components/Download";
 import Footer from "./components/Footer";
 
 const defaultGoogleQRURI =
@@ -25,8 +24,10 @@ function App() {
         </header>
         <main>
           <QRImage generatedImgSource={generatedImgSource} />
-          <URLInput onSetGeneratedImgSource={setGeneratedImgSource} />
-          <Download generatedImgSource={generatedImgSource} />
+          <URLInput
+            onSetGeneratedImgSource={setGeneratedImgSource}
+            generatedImgSource={generatedImgSource}
+          />
         </main>
       </div>
 

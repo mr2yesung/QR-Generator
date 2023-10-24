@@ -1,12 +1,14 @@
 import QRCode from "qrcode";
 import { useState } from "react";
 import PropTypes from "prop-types";
+import Download from "./Download";
 
 URLInput.propTypes = {
   onSetGeneratedImgSource: PropTypes.func,
+  generatedImgSource: PropTypes.string,
 };
 
-function URLInput({ onSetGeneratedImgSource }) {
+function URLInput({ onSetGeneratedImgSource, generatedImgSource }) {
   /**
    * currentInputURL stores the data of user input dynamically
    * currentInputURL needs to be a string
@@ -32,7 +34,7 @@ function URLInput({ onSetGeneratedImgSource }) {
   }
 
   return (
-    <form onSubmit={handleSubmitGenerateQR} className="input-group mb-3">
+    <form onSubmit={handleSubmitGenerateQR} className="mb-3">
       <input
         type="text"
         name="url"
@@ -41,11 +43,13 @@ function URLInput({ onSetGeneratedImgSource }) {
         onChange={handleSetCurrentInputURL}
         className="form-control"
         aria-label="Enter your URL"
-        aria-describedby="button-addon2"
       />
-      <button type="submit" className="btn btn-outline-dark" id="button-addon2">
-        Generate
-      </button>
+      <div className="btn-container">
+        <button type="submit" className="btn btn-outline-dark">
+          Generate
+        </button>
+        <Download generatedImgSource={generatedImgSource} />
+      </div>
     </form>
   );
 }

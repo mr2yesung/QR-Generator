@@ -12,7 +12,7 @@ function Download({ generatedImgSource }) {
       className="btn btn-primary"
       role="button"
     >
-      Download
+      Download PNG
     </a>
   );
 }
