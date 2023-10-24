@@ -48,7 +48,8 @@ footer {
 }
 
 p {
-  margin-bottom: 1%;
+  margin-bottom: 0.1%;
+  font-size: 0.7rem;
 }
 
 .github-link {
