@@ -19,12 +19,17 @@ function App() {
 
   return (
     <>
-      <main>
-        <Heading />
-        <QRImage generatedImgSource={generatedImgSource} />
-        <URLInput onSetGeneratedImgSource={setGeneratedImgSource} />
-        <Download generatedImgSource={generatedImgSource} />
-      </main>
+      <div className="flex-item">
+        <header>
+          <Heading />
+        </header>
+        <main>
+          <QRImage generatedImgSource={generatedImgSource} />
+          <URLInput onSetGeneratedImgSource={setGeneratedImgSource} />
+          <Download generatedImgSource={generatedImgSource} />
+        </main>
+      </div>
+
       <footer>
         <Footer />
       </footer>

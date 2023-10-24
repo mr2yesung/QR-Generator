@@ -1,5 +1,5 @@
 function Heading() {
-  return <h1>Enter your URL</h1>;
+  return <h1>QR Code Generator</h1>;
 }
 
 export default Heading;
