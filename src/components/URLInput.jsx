@@ -13,9 +13,7 @@ function URLInput({ onSetGeneratedImgSource, generatedImgSource }) {
    * currentInputURL stores the data of user input dynamically
    * currentInputURL needs to be a string
    */
-  const [currentInputURL, setCurrentInputURL] = useState(
-    "https://www.google.com"
-  );
+  const [currentInputURL, setCurrentInputURL] = useState("");
 
   function handleSetCurrentInputURL(e) {
     setCurrentInputURL(e.target.value);
