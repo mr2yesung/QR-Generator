@@ -31,13 +31,14 @@ img {
   /*
   use grid to easily make the two buttons have same size
   */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   gap: 5%;
 }
 
 .btn {
   font-family: "Roboto Condensed", sans-serif;
+  flex: 1 1 0;
 }
 
 footer {
