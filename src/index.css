@@ -28,9 +28,6 @@ img {
 }
 
 .btn-container {
-  /*
-  use grid to easily make the two buttons have same size
-  */
   display: flex;
   justify-content: space-between;
   gap: 5%;
@@ -55,4 +52,17 @@ p {
 
 .github-link {
   color: inherit;
+}
+
+/* fix mobile sticky hover (only for modern mobile devices) */
+@media (hover: none) {
+  .btn-outline-dark:hover {
+    background-color: var(--bs-white);
+    color: var(--bs-gray-900);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+  }
 }
