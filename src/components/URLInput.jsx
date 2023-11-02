@@ -25,6 +25,8 @@ function URLInput({ onSetGeneratedImgSource, generatedImgSource }) {
     if (!currentInputURL) return;
 
     try {
+      // QRCode.toDataURL() does not require network connection
+      // tested using developer tools in chrome
       onSetGeneratedImgSource(await QRCode.toDataURL(currentInputURL));
     } catch (err) {
       console.error(err);
