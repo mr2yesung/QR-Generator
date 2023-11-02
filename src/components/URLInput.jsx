@@ -1,14 +1,13 @@
-import QRCode from "qrcode";
 import { useState } from "react";
 import PropTypes from "prop-types";
 import Download from "./Download";
 
 URLInput.propTypes = {
-  onSetGeneratedImgSource: PropTypes.func,
+  generateQRCode: PropTypes.func,
   generatedImgSource: PropTypes.string,
 };
 
-function URLInput({ onSetGeneratedImgSource, generatedImgSource }) {
+function URLInput({ generateQRCode, generatedImgSource }) {
   /**
    * currentInputURL stores the data of user input dynamically
    * currentInputURL needs to be a string
@@ -24,13 +23,7 @@ function URLInput({ onSetGeneratedImgSource, generatedImgSource }) {
 
     if (!currentInputURL) return;
 
-    try {
-      // QRCode.toDataURL() does not require network connection
-      // tested using developer tools in chrome
-      onSetGeneratedImgSource(await QRCode.toDataURL(currentInputURL));
-    } catch (err) {
-      console.error(err);
-    }
+    generateQRCode(currentInputURL);
   }
 
   return (
