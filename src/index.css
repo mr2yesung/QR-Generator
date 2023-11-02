@@ -55,14 +55,27 @@ p {
 }
 
 /* fix mobile sticky hover (only for modern mobile devices) */
-@media (hover: none) {
+.btn-outline-dark:hover {
+  background-color: var(--bs-white);
+  color: var(--bs-gray-900);
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  border-color: var(--bs-primary);
+}
+
+/* hover-able devices (with mouse input) */
+@media (hover: hover) and (pointer: fine) {
   .btn-outline-dark:hover {
-    background-color: var(--bs-white);
-    color: var(--bs-gray-900);
+    background-color: var(--bs-gray-900);
+    color: var(--bs-white);
   }
 
   .btn-primary:hover {
-    background-color: var(--bs-primary);
+    background-color: #0b5ed7;
     color: var(--bs-white);
+    border-color: #0a58ca;
   }
 }
