@@ -27,11 +27,11 @@ The generated QR code will appear on the screen, and you have the option to down
 
 ### 17 Inch Laptop Display (1920 x 1080)
 
-<img width="960" alt="17 inch display example screenshot" src="https://github.com/mr2yesung/QR-Generator/assets/119972286/392de76e-d669-4d04-bb1e-88dfecefd17c">
+<img width="956" alt="스크린샷 2023-11-03 065740" src="https://github.com/mr2yesung/QR-Generator/assets/119972286/00e076c6-a6e3-4341-b0b7-0a0362617eee">
 
 ### iPhone SE (375 x 667)
 
-<img width="198" alt="iphone SE display example screenshot" src="https://github.com/mr2yesung/QR-Generator/assets/119972286/56bc0f4e-9466-4e54-863f-9546da970164">
+<img width="214" alt="스크린샷 2023-11-03 065840" src="https://github.com/mr2yesung/QR-Generator/assets/119972286/df35e3a3-9ad0-4ae8-8eaa-07b15f675cf5">
 
 ## Acknowledgement
 
