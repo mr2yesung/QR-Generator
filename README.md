@@ -31,7 +31,7 @@ The generated QR code will appear on the screen, and you have the option to down
 
 ### iPhone SE (375 x 667)
 
-<img width="198" alt="스크린샷 2023-11-02 220013" src="https://github.com/mr2yesung/QR-Generator/assets/119972286/56bc0f4e-9466-4e54-863f-9546da970164">
+<img width="198" alt="iphone SE display example screenshot" src="https://github.com/mr2yesung/QR-Generator/assets/119972286/56bc0f4e-9466-4e54-863f-9546da970164">
 
 ## Acknowledgement
 
