@@ -46,5 +46,6 @@ The copyright of [Favicon](https://fonts.google.com/icons?selected=Material%20Sy
 ## Contact Info
 
 - Name: Yeseong Kim
-- Email: yeseonk@uci.edu
+- Personal Email: mryesung1@gmail.com
+- Public Email: yeseonk@uci.edu
 - Phone: (+1) 949-836-1299
