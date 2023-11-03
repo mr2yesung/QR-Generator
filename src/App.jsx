@@ -5,7 +5,7 @@ import QRImage from "./components/QrImage";
 import URLInput from "./components/URLInput";
 import Footer from "./components/Footer";
 
-const defaultQRURL = "https://www.google.com/";
+const defaultQRURL = "https://yskim-qr-generator.vercel.app/";
 
 function App() {
   /**
