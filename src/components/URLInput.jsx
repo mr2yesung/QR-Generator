@@ -18,7 +18,7 @@ function URLInput({ generateQRCode, generatedImgSource }) {
     setCurrentInputURL(e.target.value);
   }
 
-  async function handleSubmitGenerateQR(e) {
+  function handleSubmitGenerateQR(e) {
     e.preventDefault();
 
     if (!currentInputURL) return;
