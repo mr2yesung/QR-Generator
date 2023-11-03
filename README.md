@@ -1,6 +1,8 @@
 # QR-Generator
 
 QR code generator web application.
+<br/>
+Please take a moment to try this web application [here](https://yskim-qr-generator.vercel.app/).
 
 ## How to Use
 
@@ -21,11 +23,25 @@ The generated QR code will appear on the screen, and you have the option to down
 - Bootstrap
 - Html
 
+## Display Examples
+
+### 17 Inch Laptop Display (1920 x 1080)
+
+<img width="960" alt="17 inch display example screenshot" src="https://github.com/mr2yesung/QR-Generator/assets/119972286/392de76e-d669-4d04-bb1e-88dfecefd17c">
+
+### iPhone SE (375 x 667)
+
+<img width="198" alt="스크린샷 2023-11-02 220013" src="https://github.com/mr2yesung/QR-Generator/assets/119972286/56bc0f4e-9466-4e54-863f-9546da970164">
+
 ## Acknowledgement
 
 This web application is developed with React using Vite environment.
 <br/>
 This web application is developed using the npm package [qrcode](https://github.com/soldair/node-qrcode).
+<br/>
+This web application is deployed on [vercel](https://yskim-qr-generator.vercel.app/).
+<br/>
+The copyright of [Favicon](https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Aqr_code%3AFILL%400%3Bwght%40400%3BGRAD%400%3Bopsz%4024) used in this web application belongs to Google.
 
 ## Contact Info
 
