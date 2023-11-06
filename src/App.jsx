@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <div className="flex-item">
+      <div>
         <header>
           <Heading />
         </header>
