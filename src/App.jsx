@@ -5,28 +5,20 @@ import QRImage from "./components/QrImage";
 import URLInput from "./components/URLInput";
 import Footer from "./components/Footer";
 
-const defaultQRURL = "https://yskim-qr-generator.vercel.app/";
+const DEFAULTQRURL = "https://yskim-qr-generator.vercel.app/";
 
 function App() {
-  /**
-   * .toDataURL() method returns the dataURI of the QR code image
-   * store the dataURI in generatedImgSource to pass in as a prop to QrImage Component
-   * set dataURI in URLInput Component button element
-   */
   const [generatedImgSource, setGeneratedImgSource] = useState("");
 
-  async function generateQRCode(URL = defaultQRURL) {
+  async function generateQRCode(URL = DEFAULTQRURL) {
     try {
-      // QRCode.toDataURL() does not require network connection
-      // tested using developer tools in chrome
       setGeneratedImgSource(await QRCode.toDataURL(URL));
     } catch (err) {
       console.error(err);
     }
   }
 
-  // generate default google QR Code with defaultQRURL
-  useEffect(() => {
+  useEffect(function () {
     generateQRCode();
   }, []);
 

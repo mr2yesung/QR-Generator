@@ -8,10 +8,6 @@ URLInput.propTypes = {
 };
 
 function URLInput({ generateQRCode, generatedImgSource }) {
-  /**
-   * currentInputURL stores the data of user input dynamically
-   * currentInputURL needs to be a string
-   */
   const [currentInputURL, setCurrentInputURL] = useState("");
 
   function handleSetCurrentInputURL(e) {
