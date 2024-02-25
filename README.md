@@ -49,3 +49,9 @@ The copyright of [Favicon](https://fonts.google.com/icons?selected=Material%20Sy
 - Personal Email: mryesung1@gmail.com
 - Public Email: yeseonk@uci.edu
 - Phone: (+1) 949-836-1299
+
+## Takeaways
+
+- Utilized the QRCode API from the Node Package Manager to dynamically generate QR codes based on user input.
+- Enhanced the user experience by fine-tuning Bootstrap hover behaviors for optimal performance on mobile devices within a user-friendly web application.
+- Commenced the project using Vite and successfully deployed it on Vercel, providing exposure to real-world environments and ensuring seamless accessibility.
